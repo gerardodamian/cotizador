@@ -9,17 +9,19 @@
 </head>
 <body>
     <h1>Conversor de Monedas</h1>
-    <form class="formulario">
-        <p>Seleccionar moneda:</p>
-        
-        <input type="radio" name="cambio" id="uno"><span>Dolar</span><i class="fa-solid fa-sack-dollar fa-xl" style="color: #ceb40d;"></i>
-        <input type="radio" name="cambio" id="dos"><span>Euro</span><i class="fa-solid fa-euro-sign fa-xl" style="color: #ceb40d;"></i></i>
-        <input type="radio" name="cambio" id="tres"><span>Bitcoin</span><i class="fa-brands fa-bitcoin fa-xl" style="color:#ceb40d ;"></i>
-        <input type="radio" name="cambio" id="cuatro"><span>Real</span><i class="fa-solid fa-brazilian-real-sign fa-xl" style="color: #ceb40d;"></i>
-        <p>Ingrese monto:</p>
-        <input type="number" id="valor" min="1" max="1000000"> <br><br>
-        <input type="button" id="cotizador" value="Cotizar" onclick="convertir()">
-    </form>
+    <div class="formulario">
+    <label for="valor"><span>Cantidad en Pesos: </span></label>
+    <input type="number" id="valor">
+    <br>
+    <input type="radio" id="uno" name="moneda" value="dolar"><span>Dólares</span><i class="fa-solid fa-sack-dollar fa-xl" style="color: #d2b914;"></i>
+    <input type="radio" id="dos" name="moneda" value="euro"><span>Euros</span><i class="fa-solid fa-euro-sign fa-xl" style="color: #d2b914;"></i>
+    <input type="radio" id="tres" name="moneda" value="bitcoin"><span>Bitcoins</span><i class="fa-solid fa-bitcoin-sign fa-xl" style="color:#d2b914 ;"></i>
+    <input type="radio" id="cuatro" name="moneda" value="real"><span>Reales</span><i class="fa-solid fa-brazilian-real-sign fa-xl" style="color: #d2b914;"></i>
+    <br>
+    <button id="convertirBtn" onclick="convertir()">Convertir</button>
+    <p id="resultado"><span>Resultado:</span></p> 
+</div>
+
 
     <p>Consulte cómo está la cotización del Bitcoin en tiempo real (BTC). Conozca el precio del Bitcoin hoy e infórmese con nuestros gráficos, análisis y más.</p>
     
