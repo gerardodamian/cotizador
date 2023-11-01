@@ -1,30 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/226c66f217.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/conversor.css">
-    <title>"Conversor de monedas"</title>
-</head>
-<body>
-    <h1>Conversor de Monedas</h1>
-    <div class="formulario">
-    <label for="valor"><span>Cantidad en Pesos: </span></label>
-    <input type="number" id="valor">
-    <br>
-    <input type="radio" id="uno" name="moneda" value="dolar"><span>Dólares</span><i class="fa-solid fa-sack-dollar fa-xl" style="color: #d2b914;"></i>
-    <input type="radio" id="dos" name="moneda" value="euro"><span>Euros</span><i class="fa-solid fa-euro-sign fa-xl" style="color: #d2b914;"></i>
-    <input type="radio" id="tres" name="moneda" value="bitcoin"><span>Bitcoins</span><i class="fa-solid fa-bitcoin-sign fa-xl" style="color:#d2b914 ;"></i>
-    <input type="radio" id="cuatro" name="moneda" value="real"><span>Reales</span><i class="fa-solid fa-brazilian-real-sign fa-xl" style="color: #d2b914;"></i>
-    <br>
-    <button id="convertirBtn" onclick="convertir()">Convertir</button>
-    <p id="resultado"><span>Resultado:</span></p> 
-</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/226c66f217.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./css/conversor.css" />
+        <title>"Conversor de monedas"</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light" style="background-color: rgb(185, 113, 25);">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="./multimedia/logo.png"
+                            alt=""
+                            width="70"
+                            height="57"
+                        />
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <h1>Conversor de Monedas</h1>
+        <div class="formulario">
+            <label for="valor"><span>Cantidad en Pesos: </span></label>
+            <input type="number" id="valor" />
+            <br />
+            <input type="radio" id="uno" name="moneda" value="dolar" /><span
+                >Dólares</span
+            ><i
+                class="fa-solid fa-sack-dollar fa-xl"
+                style="color: #d2b914"
+            ></i>
+            <input type="radio" id="dos" name="moneda" value="euro" /><span
+                >Euros</span
+            ><i class="fa-solid fa-euro-sign fa-xl" style="color: #d2b914"></i>
+            <input type="radio" id="tres" name="moneda" value="bitcoin" /><span
+                >Bitcoins</span
+            ><i
+                class="fa-solid fa-bitcoin-sign fa-xl"
+                style="color: #d2b914"
+            ></i>
+            <input type="radio" id="cuatro" name="moneda" value="real" /><span
+                >Reales</span
+            ><i
+                class="fa-solid fa-brazilian-real-sign fa-xl"
+                style="color: #d2b914"
+            ></i>
+            <br />
+            <button id="convertirBtn" onclick="convertir()">Convertir</button>
+            <p id="resultado"><span>Resultado:</span></p>
+        </div>
 
+        <p>
+            Consulte cómo está la cotización del Bitcoin en tiempo real (BTC).
+            Conozca el precio del Bitcoin hoy e infórmese con nuestros gráficos,
+            análisis y más.
+        </p>
+        <footer class="pie-pagi">
+            <div class="whatsapp">
+                <a href="https://walink.co/36f4a1">
+                    <i class="fa-brands fa-whatsapp"></i
+                ></a>
+                </div>
+            <div class="grupo-1">
+                <div class="caja">
+                    <figure>
+                        <a href="#">
+                            <img src="./multimedia/logo.png" alt="logo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="caja">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Desde ya hace ocho años estamos brindando nuetros servicios a los clientes de todo el pais</p>
+                    <p>
+                        Por cualquier consulta o si necesita informacion  no dude en escribirnos por whatsApp al 3827-400933.
+                    </p>
+                </div>
+                <div class="caja">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/profile.php?id=100075131217667&mibextid=ZbWKwL" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/biomagnetismo_a.g?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCzGqoNLAQgo3qLTULuwqPeQ" class="fa fa-youtube"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>AMBA Cambios</b> - Todos los Derechos Reservados</small>
+            </div>
 
-    <p>Consulte cómo está la cotización del Bitcoin en tiempo real (BTC). Conozca el precio del Bitcoin hoy e infórmese con nuestros gráficos, análisis y más.</p>
-    
-    <script src="./js/conversor.js"></script>
-</body>
+           
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="./js/conversor.js"></script>
+    </body>
 </html>

@@ -1,3 +1,23 @@
+
+// Solicitar el nombre del usuario
+let nombre = prompt("Por favor, ingresa tu nombre:");
+let apellido = prompt("Por favor, ingresa tu apellido:");
+
+// Solicitar la edad del usuario
+let edad = prompt("Hola " + nombre + ", ingresa tu edad:");
+
+// Convertir la entrada de edad a un número
+edad = parseInt(edad);
+
+// Verificar si el usuario es mayor de 18 años
+if (!isNaN(edad) && edad >= 18) {
+    alert("Bienvenido, " + nombre + ". Eres mayor de 18 años y puedes entrar.");
+} else {
+    alert("Lo siento, " + nombre + ". Eres menor de 18 años y no puedes entrar.");
+}
+
+
+
 function convertir(){
     let valore = parseInt(document.getElementById("valor").value);
     let resultado = 0;
@@ -19,7 +39,7 @@ function convertir(){
         }
         else if (document.getElementById("tres").checked){
             resultado = valore / bitcoin;
-            resultadoElement.textContent = "El cambio de Pesos a Bitcoins es: ₿" + resultado.toFixed(6); // Mostrar 6 decimales
+            resultadoElement.textContent = "El cambio de Pesos a Bitcoins es: ₿" + resultado.toFixed(2); 
         }
         else if (document.getElementById("cuatro").checked){
             resultado = valore / real;
@@ -31,17 +51,6 @@ function convertir(){
     }
 }
 
-//Crear un algoritmo con un condicional.
-
-const numero = parseFloat(prompt("Ingresa un número:"));
-
-if (numero > 0) {
-    console.log("El número es positivo");
-} else if (numero === 0) {
-    console.log("El número es igual a cero");
-} else {
-    console.log("El número es negativo");
-}
 
 //Crear un algoritmo utilizando un ciclo.
 
